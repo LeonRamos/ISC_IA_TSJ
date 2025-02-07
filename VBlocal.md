@@ -20,7 +20,7 @@ Este ejemplo implementa un algoritmo de búsqueda local para encontrar el máxim
 
 Este enfoque es eficiente para encontrar un máximo local, aunque no garantiza encontrar el máximo global.
 
-## (Código Python)[https://colab.research.google.com/drive/1WzAzwzZ2cff8vXPhCdh7KlLEYSW-OOuq?usp=sharing]
+## [Código Python](https://colab.research.google.com/drive/1WzAzwzZ2cff8vXPhCdh7KlLEYSW-OOuq?usp=sharing)
 
 ```
 import random
