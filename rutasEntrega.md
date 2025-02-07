@@ -1,5 +1,4 @@
-
-´´´
+´´´ python
 import random
 import math
 
@@ -40,5 +39,4 @@ def busqueda_local(max_iteraciones):
 mejor_ruta, mejor_distancia = busqueda_local(1000)
 print(f"Mejor ruta encontrada: {' -> '.join(mejor_ruta)}")
 print(f"Distancia total: {mejor_distancia} km")
-
 ´´´
