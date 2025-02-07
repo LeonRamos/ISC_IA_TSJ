@@ -1,6 +1,3 @@
-
-
-```
 # Búsqueda Local para Encontrar el Máximo de una Función
 
 ## Contexto
@@ -21,8 +18,8 @@ Este ejemplo implementa un algoritmo de búsqueda local para encontrar el máxim
 Este enfoque es eficiente para encontrar un máximo local, aunque no garantiza encontrar el máximo global.
 
 ## Código Python
-https://colab.research.google.com/drive/1WzAzwzZ2cff8vXPhCdh7KlLEYSW-OOuq?usp=sharing
-```
+
+```python
 import random
 import math
 import numpy as np
@@ -37,7 +34,7 @@ def busqueda_local(intervalo, num_iteraciones):
     
     for _ in range(num_iteraciones):
         vecino = solucion_actual + random.uniform(-0.1, 0.1)
-        vecino = max(min(vecino, intervalo), intervalo)
+        vecino = max(min(vecino, intervalo[1]), intervalo[0])
         valor_vecino = funcion_objetivo(vecino)
         
         if valor_vecino > mejor_valor:
@@ -71,6 +68,4 @@ plt.grid(True)
 plt.show()
 ```
 
-Este código se puede ejecutar en Google Colab para visualizar el resultado de la búsqueda local.
-```
-
+Este código se puede ejecutar en [Google Colab](https://colab.research.google.com/drive/1WzAzwzZ2cff8vXPhCdh7KlLEYSW-OOuq) para visualizar el resultado de la búsqueda local.
