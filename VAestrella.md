@@ -1,6 +1,6 @@
-Aquí tienes un archivo .md con la sección de la demostración visual del algoritmo A*, listo para ser usado en GitHub:
 
-```markdown
+
+```
 # Demostración Visual del Algoritmo A*
 
 ## Grafo de Ejemplo
@@ -8,13 +8,13 @@ Aquí tienes un archivo .md con la sección de la demostración visual del algor
 Consideremos el siguiente grafo para encontrar el camino más corto desde el nodo **A** al nodo **G**:
 
 ```
-        A
-      /   \
-    (1)    (4)
-    B       C
-   / \     / \
- (2) (5) (1) (3)
- D    E   F    G
+            A
+          /   \
+        (1)    (4)
+        B       C
+       / \     / \
+    (2) (5) (1) (3)
+    D    E   F    G
 ```
 
 Los números entre paréntesis representan los costos de cada arista.
