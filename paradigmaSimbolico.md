@@ -1,148 +1,119 @@
+# 🔢 Teorema de Pitágoras y Paradigma Simbólico en IA 🤖
 
----
+GitHub last commit
+GitHub stars
 
-# 📐✨ **Teorema de Pitágoras y el Paradigma Simbólico en IA**  
+## 1. Teorema de Pitágoras y su Campo de Aplicación 📐
 
-Badge Badge  
-✍️ _Última actualización: 18 de febrero de 2025_
+El Teorema de Pitágoras establece que en un triángulo rectángulo, el cuadrado de la hipotenusa es igual a la suma de los cuadrados de los otros dos lados[1]. Se expresa matemáticamente como:
 
----
+$$ a^2 + b^2 = c^2 $$
 
-## 🔍 **¿Qué es el Teorema de Pitágoras?**
+Donde c es la hipotenusa y a y b son los catetos.
 
-El **Teorema de Pitágoras** es una piedra angular de la geometría euclidiana 🧮. Establece una relación fundamental entre los lados de un triángulo rectángulo. Este teorema, atribuido al matemático griego **Pitágoras**, se expresa matemáticamente como:
+### Campos de Aplicación 🌐
 
-> **"En un triángulo rectángulo, el cuadrado de la longitud de la hipotenusa es igual a la suma de los cuadrados de las longitudes de los catetos."**
+- **Arquitectura y Construcción**: Para calcular distancias y alturas de estructuras[4].
+- **Navegación**: En cálculos de rutas y distancias[4].
+- **Topografía**: Para medir terrenos y determinar alturas[4].
+- **Astronomía**: En el cálculo de distancias espaciales[4].
+- **Ingeniería**: En diversos cálculos y diseños estructurales[9].
 
-### 📊 Fórmula Matemática  
-$$a^2 + b^2 = c^2$$
+## 2. Paradigma Simbólico en IA 🧠
+
+### Axioma
+En el paradigma simbólico, un axioma es una afirmación fundamental considerada verdadera sin necesidad de demostración[5].
+
+### Teorema
+Un teorema es una proposición que se puede demostrar lógicamente a partir de axiomas o teoremas previamente establecidos[5].
+
+### Comprobación
+La comprobación en el paradigma simbólico implica el uso de reglas lógicas y deducciones para verificar la validez de una afirmación basándose en los axiomas y teoremas conocidos[5].
+
+## 3. Algoritmo Simbólico para Cálculo de Superficie 🏞️
+
+```
+INICIO
+  DEFINIR reglas_calculo_superficie
+  DEFINIR reglas_comprobacion_garfield
   
-Donde:  
-- **a** y **b**: Catetos del triángulo  
-- **c**: Hipotenusa (lado opuesto al ángulo recto)
-
----
-
-## ✨ **Aplicaciones del Teorema**
-
-El Teorema de Pitágoras tiene múltiples aplicaciones prácticas en diversos campos:  
-
-- 🏗️ **Arquitectura y Construcción:** Cálculo de diagonales y alturas.  
-- 🌎 **Topografía:** Medición de distancias y alturas en terrenos.  
-- 🚢 **Navegación:** Cálculo de rutas y distancias en mapas.  
-- ⚙️ **Física:** Descomposición de vectores y análisis de fuerzas.  
-- 📐 **Geometría:** Análisis de polígonos y propiedades espaciales.  
-
----
-
-## 🤖 **El Paradigma Simbólico en IA**
-
-El paradigma simbólico en Inteligencia Artificial (IA) utiliza reglas matemáticas explícitas para resolver problemas. En este caso, aplicaremos el Teorema de Pitágoras para desarrollar un agente inteligente que calcule el área de un terreno triangular.
-
-### 🔧 **Ejercicio Práctico: Cálculo del Área**
-
-Imagina que tienes un terreno triangular con dos lados conocidos (**a** y **b**) y necesitas calcular su área. Los pasos son:  
-
-1️⃣ Determinar si los lados forman un triángulo rectángulo.  
-2️⃣ Calcular la hipotenusa usando el Teorema de Pitágoras:  
-   $$c = \sqrt{a^2 + b^2}$$
+  FUNCIÓN calcular_superficie(lado1, lado2, lado3)
+    SI es_triangulo_rectangulo(lado1, lado2, lado3) ENTONCES
+      area = (lado1 * lado2) / 2
+      RETORNAR area
+    SINO
+      RETORNAR "No es un triángulo rectángulo"
+    FIN SI
+  FIN FUNCIÓN
   
-3️⃣ Calcular el área del triángulo:  
-   $$\text{Área} = \frac{a \cdot b}{2}$$
+  FUNCIÓN comprobar_garfield(area_calculada, lado1, lado2, lado3)
+    area_garfield = (lado1 + lado2 + lado3) * (lado1 + lado2 - lado3) * 
+                    (lado1 - lado2 + lado3) * (-lado1 + lado2 + lado3) / (4 * 16)
+    SI area_calculada == area_garfield ENTONCES
+      RETORNAR "Comprobación exitosa"
+    SINO
+      RETORNAR "Error en el cálculo"
+    FIN SI
+  FIN FUNCIÓN
   
+  LEER lado1, lado2, lado3
+  area = calcular_superficie(lado1, lado2, lado3)
+  resultado_comprobacion = comprobar_garfield(area, lado1, lado2, lado3)
+  MOSTRAR area, resultado_comprobacion
+FIN
+```
 
----
-
-## 💻 **Implementación en Python**
-
-Aquí tienes un agente inteligente que realiza estos cálculos:
+## 4. Implementación en Python usando Google Colab 🐍
 
 ```python
 import math
 
-class TerrainAgent:
-    def __init__(self):
-        self.side1 = 0
-        self.side2 = 0
-        self.side3 = 0
+def es_triangulo_rectangulo(a, b, c):
+    lados = sorted([a, b, c])
+    return math.isclose(lados[0]**2 + lados[1]**2, lados[2]**2, rel_tol=1e-9)
 
-    def input_sides(self):
-        self.side1 = float(input("Ingrese la longitud del primer lado: "))
-        self.side2 = float(input("Ingrese la longitud del segundo lado: "))
+def calcular_superficie(a, b, c):
+    if es_triangulo_rectangulo(a, b, c):
+        lados = sorted([a, b, c])
+        return (lados[0] * lados[1]) / 2
+    else:
+        return "No es un triángulo rectángulo"
 
-    def is_right_triangle(self):
-        hypotenuse = math.sqrt(self.side1**2 + self.side2**2)
-        self.side3 = round(hypotenuse, 2)
-        return True
+def comprobar_garfield(area, a, b, c):
+    s = (a + b + c) / 2
+    area_garfield = math.sqrt(s * (s-a) * (s-b) * (s-c))
+    return math.isclose(area, area_garfield, rel_tol=1e-9)
 
-    def calculate_area(self):
-        area = (self.side1 * self.side2) / 2
-        return round(area, 2)
+# Ejemplo de uso
+lado1, lado2, lado3 = 3, 4, 5
+area = calcular_superficie(lado1, lado2, lado3)
+comprobacion = comprobar_garfield(area, lado1, lado2, lado3)
 
-    def run(self):
-        self.input_sides()
-        if self.is_right_triangle():
-            area = self.calculate_area()
-            print(f"📏 Hipotenusa: {self.side3}")
-            print(f"📐 Área del triángulo: {area}")
-        else:
-            print("⚠️ Los lados ingresados no forman un triángulo rectángulo.")
-
-# Crear y ejecutar el agente
-agent = TerrainAgent()
-agent.run()
+print(f"Área calculada: {area}")
+print(f"Comprobación Garfield: {'Exitosa' if comprobacion else 'Fallida'}")
 ```
 
----
+## 5. Mejoras para un Agente Inteligente 🚀
 
-## 🧪 **Cálculo Manual**
+Para mejorar este programa y convertirlo en un agente inteligente más robusto, los alumnos deberían considerar:
 
-### Ejemplo:
-- Cateto 1 (**a**) = 30 m  
-- Cateto 2 (**b**) = 12 m  
+1. **Base de Conocimientos**: Implementar una base de datos de reglas y hechos sobre geometría[5].
+2. **Interfaz de Usuario**: Desarrollar una interfaz más amigable para la entrada de datos y visualización de resultados[3].
+3. **Manejo de Errores**: Incorporar un sistema robusto de manejo de excepciones y validación de entradas[5].
+4. **Aprendizaje**: Implementar un mecanismo para que el agente aprenda de nuevos casos y mejore sus cálculos con el tiempo[5].
+5. **Explicaciones**: Añadir la capacidad de explicar el razonamiento detrás de cada cálculo y decisión[5].
+6. **Integración con Otros Sistemas**: Permitir la interacción con otros sistemas o bases de datos geométricas[3].
 
-#### Paso 1: Calcular la Hipotenusa  
-$$c = \sqrt{30^2 + 12^2}$$
-  
-$$c ≈ 32.31 \, \text{m}$$
-  
+Estas mejoras ayudarán a superar las limitaciones del paradigma simbólico, como la rigidez en el razonamiento y la dificultad para manejar incertidumbre, acercando el sistema a un verdadero agente inteligente[5][2].
 
-#### Paso 2: Calcular el Área  
-$$\text{Área} = \frac{30 \cdot 12}{2}$$
-  
-$$\text{Área} ≈ 180 \, \text{m}^2$$
-  
-
----
-
-## 🎯 **Importancia para los Estudiantes**
-
-✨ Comprender el Teorema de Pitágoras es esencial porque:  
-- 📚 Desarrolla habilidades lógicas y abstractas.  
-- 🔑 Es base para conceptos avanzados en matemáticas y ciencias.  
-- 💡 Tiene aplicaciones prácticas en diversas profesiones.  
-
----
-
-## 📊 **Demostraciones del Teorema**
-
-Existen múltiples formas de demostrar este teorema, como:  
-
-1️⃣ Demostración algebraica.  
-2️⃣ Demostración geométrica.  
-3️⃣ Método de Garfield (con trapecios).  
-
-Por ejemplo, con Garfield, podemos verificar que el área total calculada con diferentes métodos coincide perfectamente.
-
----
-
-## 🏆 ¡Explora Más!
-
-🌐 [Wikipedia - Teorema de Pitágoras](https://es.wikipedia.org/wiki/Teorema_de_Pit%C3%A1goras)  
-📹 [Video explicativo en YouTube](https://www.youtube.com/watch?v=JFLelb3vLJw)  
-
----
-
-### 🚀 ¡Manos a la obra! Implementa este agente inteligente o realiza los cálculos manualmente para comprender mejor el paradigma simbólico en IA. 😄
-
-
+Citations:
+[1] https://academiacartablanca.es/matematicas/teorema-pitagoras-que-es/
+[2] https://www.datacamp.com/es/blog/what-is-symbolic-ai
+[3] https://blog.evoacademy.cl/introduccion-a-google-colab/
+[4] https://www.clarin.com/viste/puede-aplicar-teorema-pitagoras-ejemplos-vida-real_0_uz78WJLYNP.html
+[5] https://iccsi.com.ar/paradigma-simbolico-inteligencia-artificial/
+[6] https://planetachatbot.com/como-utilizar-api-chatgpt-para-interaccion-directa-desde-colab-o-databricks/
+[7] https://koruro.com/teorema-de-pitagoras
+[8] https://cibernetica.wordpress.com/2020/03/17/paradigmas-y-tendencias-en-la-investigacion-de-la-ia/
+[9] https://unibetas.com/teorema-de-pitagoras/
+[10] https://content.nroc.org/Algebra.HTML5/U07L2T1/TopicText/es/text.html
