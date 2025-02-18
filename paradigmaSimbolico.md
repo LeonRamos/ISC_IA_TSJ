@@ -1,4 +1,3 @@
-A continuación, te presento un archivo `.MD` diseñado para ser atractivo visualmente en GitHub, con iconos, emojis y badges para captar la atención de los estudiantes y hacer que la lectura sea más dinámica.
 
 ---
 
@@ -146,5 +145,4 @@ Por ejemplo, con Garfield, podemos verificar que el área total calculada con di
 
 ### 🚀 ¡Manos a la obra! Implementa este agente inteligente o realiza los cálculos manualmente para comprender mejor el paradigma simbólico en IA. 😄
 
-Citations:
-[1] https://ppl-ai-file-upload.s3.amazonaws.com/web/direct-files/33572030/62bc56a9-09c5-49cf-a49f-15571326eafd/paste.txt
+
