@@ -1,7 +1,7 @@
 # 🔢 Teorema de Pitágoras y Paradigma Simbólico en IA 🤖
 
-GitHub last commit
-GitHub stars
+![GitHub Repo stars](https://img.shields.io/github/stars/LeonRamos/ISC_IA_TSJ?style=social)
+
 
 ## 1. Teorema de Pitágoras y su Campo de Aplicación 📐
 
@@ -106,7 +106,7 @@ Para mejorar este programa y convertirlo en un agente inteligente más robusto, 
 
 Estas mejoras ayudarán a superar las limitaciones del paradigma simbólico, como la rigidez en el razonamiento y la dificultad para manejar incertidumbre, acercando el sistema a un verdadero agente inteligente[5][2].
 
-Citations:
+Referencias:
 [1] https://academiacartablanca.es/matematicas/teorema-pitagoras-que-es/
 [2] https://www.datacamp.com/es/blog/what-is-symbolic-ai
 [3] https://blog.evoacademy.cl/introduccion-a-google-colab/
@@ -117,3 +117,6 @@ Citations:
 [8] https://cibernetica.wordpress.com/2020/03/17/paradigmas-y-tendencias-en-la-investigacion-de-la-ia/
 [9] https://unibetas.com/teorema-de-pitagoras/
 [10] https://content.nroc.org/Algebra.HTML5/U07L2T1/TopicText/es/text.html
+
+![GitHub last commit](https://img.shields.io/github/last-commit/LeonRamos/ISC_IA_TSJ)
+
