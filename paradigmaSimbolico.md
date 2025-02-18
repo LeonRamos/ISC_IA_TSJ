@@ -1,7 +1,5 @@
 # 🔢 Teorema de Pitágoras y Paradigma Simbólico en IA 🤖
 
-![GitHub Repo stars](https://img.shields.io/github/stars/LeonRamos/ISC_IA_TSJ?style=social)
-
 
 ## 1. Teorema de Pitágoras y su Campo de Aplicación 📐
 
@@ -118,5 +116,6 @@ Referencias:
 [9] https://unibetas.com/teorema-de-pitagoras/
 [10] https://content.nroc.org/Algebra.HTML5/U07L2T1/TopicText/es/text.html
 
-![GitHub last commit](https://img.shields.io/github/last-commit/LeonRamos/ISC_IA_TSJ)
+![GitHub last commit](https://img.shields.io/github/last-commit/LeonRamos/ISC_IA_TSJ) ![GitHub Repo stars](https://img.shields.io/github/stars/LeonRamos/ISC_IA_TSJ?style=social)
+
 
