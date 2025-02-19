@@ -139,7 +139,7 @@ print(f"Recomendaciones para el usuario {user_to_recommend}:")
 print(recommendations)
 ```
 
-Esta práctica básica te introducirá a los sistemas de recomendación utilizando Google Colab, permitiendo a los estudiantes experimentar con conceptos fundamentales de IA y aprendizaje automático.
+Esta práctica básica te introducirá a los sistemas de recomendación utilizando Google Colab, permitiendote experimentar con conceptos fundamentales de IA y aprendizaje automático.
 
 > [!IMPORTANT]
 > ### Actividad 📢
