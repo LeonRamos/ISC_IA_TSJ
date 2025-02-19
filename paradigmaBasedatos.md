@@ -62,7 +62,7 @@ Este paradigma ha impulsado grandes avances en IA, permitiendo el desarrollo de 
 El enfoque en el procesamiento de grandes volúmenes de información lo hace especialmente relevante en la era del **Big Data**. Su integración con tecnologías avanzadas como la computación en la nube y hardware especializado ha impulsado el desarrollo de soluciones más inteligentes y eficientes.
 
 ## Práctica 👍🏼
-Práctica: Implementación de un Sistema de Recomendación Básico en Google Colab
+### Implementación de un Sistema de Recomendación Básico en Google Colab
 
 En esta práctica, los alumnos desarrollarán un sistema de recomendación simple utilizando Google Colab. Seguirán estos pasos:
 
