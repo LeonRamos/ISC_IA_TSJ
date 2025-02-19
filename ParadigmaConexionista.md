@@ -195,7 +195,7 @@ def predict_face(image_path):
 result = predict_face('/content/test_image.jpg')
 print(f'La persona en la imagen es: {result}')
 ```
-
+[Colab](https://github.com/LeonRamos/ISC_IA_TSJ/blob/main/ParadigmaConexionista.md#:~:text=Face.-,ipynb,-ParadigmaConexionista.md)
 ## 📝 Conclusión
 
 En este ejemplo se hizo la demostración de  cómo implementar un sistema básico de reconocimiento facial utilizando CNNs en Google Colab. Recuerda que para un sistema robusto en producción, se necesitarían consideraciones adicionales como aumento de datos, técnicas de regularización y un conjunto de datos más amplio[1][3].
