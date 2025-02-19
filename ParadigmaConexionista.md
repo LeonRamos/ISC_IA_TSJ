@@ -1,7 +1,5 @@
 # 🧠 Redes Neuronales Artificiales.
-
-![GitHub last commit](https://img.shields.io/github/last-commit/tuusuario/turepositorio)
-![GitHub stars](https://img.shields.io/github/stars/tuusuario/turepositorio?style=social)
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
 ## 📚 Introducción
 Las redes neuronales artificiales (RNA) representan uno de los avances más fascinantes en el campo de la Inteligencia Artificial (IA) 🚀. Inspiradas en el funcionamiento del cerebro humano, estas estructuras computacionales han revolucionado nuestra capacidad para procesar información y resolver problemas complejos.
@@ -46,3 +44,6 @@ Las redes neuronales artificiales son modelos computacionales inspirados en el s
 ### 🌐 Mapas Auto-organizados (SOM)
 - 📊 Aprendizaje no supervisado para visualización de datos
 - 🔍 Aplicaciones en clustering y reducción de dimensionalidad
+
+![GitHub last commit](https://img.shields.io/github/last-commit/tuusuario/turepositorio)
+![GitHub stars](https://img.shields.io/github/stars/tuusuario/turepositorio?style=social)
